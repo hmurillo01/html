@@ -11,19 +11,44 @@
   <header>
     <nav>
       <ul>
-        <div>
 
-          <form action="" method="get">
-            <label for="Nombre"><b>Nombre</b></label>
-            <input type="text" placeholder="Ingrese su nombre"> <br> <br>
-            <label for="ciudad"><b>Ciudad:</b> </label>
-            <select name="select" id="" required>
-              <option value="value1" selected disabled></option>
-              <option value="value2">Bucaramanga</option>
-              <option value="value3">Floridablanca</option>
-              <option value="value4">Girón</option>
-            </select>
-          </form>
+
+        <form action="tabla.html" method="get">
+          <label for="text"><b>Nombres:</b></label>
+          <input type="text" placeholder="Ingrese su nombre" required> <br> <br>
+
+          <label for="text"><b>Apellidos:</b></label>
+          <input type="text" placeholder="Ingrese su apellido" required> <br> <br>
+
+          <label for="Genero"><b>Seleccione su genero:</b></label><br>
+          <input type="radio" name="genero" required>
+          <label for="text"><b>Hombre</b></label>
+          <input type="radio" name="genero" required>
+          <label for="text"><b>Mujer</b></label>
+          <input type="radio" name="genero" required>
+          <label for="text"><b>Otro</b></label><br><br>
+
+          <label for="ciudad"><b>Ciudad:</b> </label>
+          <select name="select" id="" required>
+            <option value="value1" selected disabled></option>
+            <option value="value2">Bucaramanga</option>
+            <option value="value3">Floridablanca</option>
+            <option value="value4">Girón</option>
+            <option value="value4">Piedecuesta</option>
+          </select><br><br>
+
+          <b>
+            <label for="usuario"> Ingrese usuario: </label>
+          </b>
+          <input type="text" name="usuario" placeholder="Ingrese su usuario" minlength="8" required><br><br>
+          <b>
+            <label for="Contraseña"> Ingrese contraseña: </label>
+          </b>
+          <input type="password" name="contraseña" placeholder="Ingrese su contraseña" minlength="8" required><br />
+          <br>
+          <button type="submit" value="Enviar"><b>Registrarme</b></button>
+          <br><br>
+        </form>
         </div>
       </ul>
 
